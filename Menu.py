@@ -91,10 +91,10 @@ class Main_menu:
             score1 = int(data[0])
             score2 = int(data[1])
 
-        if score1 >= 75000:
+        if score1 >= 50000:
             text1 = 'В небе...'
         else:
-            text1 = 'Наберите 75000 очков в пещерах'
+            text1 = 'Наберите 50000 очков в пещерах'
 
         if score2 >= 100000:
             text2 = 'Под водой...'
@@ -139,7 +139,7 @@ class Main_menu:
                     self.fade()
 
                 if event.type == pygame.USEREVENT and event.button == level_one:
-                    if score1 >= 75000:
+                    if score1 >= 50000:
                         self.level1_selection()
                         self.fade()
                     else:
@@ -296,49 +296,49 @@ class Main_menu:
             score3 = int(data[2])
         if weapon_selected == 0:
             text_1 = 'Выбрано'
-            if score1 < 50000:
-                text_2 = 'Набрать 50000 очков в пещерах'
+            if score1 < 60000:
+                text_2 = 'Набрать 60000 очков в пещерах'
             else:
                 text_2 = 'Выбрать'
-            if score2 < 50000:
-                text_3 = 'Набрать 50000 очков в небе'
+            if score2 < 80000:
+                text_3 = 'Набрать 80000 очков в небе'
             else:
                 text_3 = 'Выбрать'
-            if score3 < 50000:
-                text_4 = 'Набрать 50000 очков под водой'
+            if score3 < 120000:
+                text_4 = 'Набрать 120000 очков под водой'
             else:
                 text_4 = 'Выбрать'
         elif weapon_selected == 1:
             text_1 = 'Выбрать'
             text_2 = 'Выбрано'
-            if score2 < 50000:
-                text_3 = 'Набрать 50000 очков в небе'
+            if score2 < 80000:
+                text_3 = 'Набрать 80000 очков в небе'
             else:
                 text_3 = 'Выбрать'
-            if score3 < 50000:
-                text_4 = 'Набрать 50000 очков под водой'
+            if score3 < 120000:
+                text_4 = 'Набрать 120000 очков под водой'
             else:
                 text_4 = 'Выбрать'
         elif weapon_selected == 2:
             text_1 = 'Выбрать'
             text_3 = 'Выбрано'
-            if score1 < 50000:
-                text_2 = 'Набрать 50000 очков в пещерах'
+            if score1 < 60000:
+                text_2 = 'Набрать 60000 очков в пещерах'
             else:
                 text_2 = 'Выбрать'
-            if score3 < 50000:
-                text_4 = 'Набрать 50000 очков под водой'
+            if score3 < 120000:
+                text_4 = 'Набрать 120000 очков под водой'
             else:
                 text_4 = 'Выбрать'
         elif weapon_selected == 3:
             text_1 = 'Выбрать'
             text_4 = 'Выбрано'
-            if score1 < 50000:
-                text_2 = 'Набрать 50000 очков в пещерах'
+            if score1 < 60000:
+                text_2 = 'Набрать 60000 очков в пещерах'
             else:
                 text_2 = 'Выбрать'
-            if score2 < 50000:
-                text_3 = 'Набрать 50000 очков в небе'
+            if score2 < 80000:
+                text_3 = 'Набрать 80000 очков в небе'
             else:
                 text_3 = 'Выбрать'
         select_1 = MenuButton(self.width / 8 - 75, self.height / 1.5, self.width / 6, self.height / 15,
@@ -404,7 +404,7 @@ class Main_menu:
                         score2 = int(data[1])
                         score3 = int(data[2])
                         gold = int(data[1])
-                    if score1 < 50000:
+                    if score1 < 60000:
                         pass
                     else:
                         weapon_to_rewrite = 1
@@ -422,7 +422,7 @@ class Main_menu:
                         score2 = int(data[1])
                         score3 = int(data[2])
                         gold = int(data[1])
-                    if score2 < 75000:
+                    if score2 < 80000:
                         pass
                     else:
                         weapon_to_rewrite = 2
@@ -440,7 +440,7 @@ class Main_menu:
                         score2 = int(data[1])
                         score3 = int(data[2])
                         gold = int(data[1])
-                    if score3 < 100000:
+                    if score3 < 120000:
                         pass
                     else:
                         weapon_to_rewrite = 3

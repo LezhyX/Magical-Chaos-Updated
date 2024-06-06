@@ -256,7 +256,7 @@ class Player(pygame.sprite.Sprite):
         self.rect.bottom = spawn_y - 50
         self.speed_x = 0
         self.speed_y = 0
-        self.hp = 111150
+        self.hp = 300
         self.invincible = False
         self.invincible_duration = 1000
         self.invincible_timer = pygame.time.get_ticks()
